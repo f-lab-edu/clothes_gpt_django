@@ -1,0 +1,32 @@
+
+
+.env
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+.idea/*
+*/.idea
+.vscode/
+idea/
+
+# Others
+.DS_Store
+
+.pytest_cache/*
+.coverage
+__pycache__
+*.pyc
+secrets.json
+
+django.config
+
+db.sqlite3
+
+analystic/
+db/
+venv/
+static/
+
