@@ -28,14 +28,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 
 if 'RDS_DB_NAME' in os.environ:
-    SECRET_KEY = env('SECRET_KEY')
-else:
     SECRET_KEY = os.environ['SECRET_KEY']
+else:
+    SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://djangoproject-dev.ap-northeast-2.elasticbeanstalk.com/']
+ALLOWED_HOSTS = ['clothesgpt-dev-dev.ap-northeast-2.elasticbeanstalk.com']
 
 
 # Application definition
